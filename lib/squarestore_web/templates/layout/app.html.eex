@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Hello Squarestore!</title>
+    <link rel="stylesheet" href="<%= static_path(@conn, "/css/app.css") %>">
+  </head>
+
+  <body class="sq-viewport">
+  <div class="sq-1-3-grid">
+    <nav class="sq-nav-area">
+      <div role="navigation" class="sq-navbar-layout">
+  		<div class="sq-navbar-nav  sq-secondary sq-text-right">
+      <!--links -->
+      <div class="sq-air-x-05">
+      	<a href="#" class="sq-text-white sq-secondary sq-r-border sq-x-padding-05">Welcome to our store!</a>
+      	<a href="#" class="sq-text-white sq-secondary sq-r-border sq-x-padding-05">Sign up for our newsletter</a>
+      	<a href="#" class="sq-text-white sq-secondary sq-x-padding-05">Contact us</a>
+      </div>
+      <!--NAVBAR Part 2/3-->
+  		</div>
+  			<div class="sq-navbar-domain  sq-secondary" style="width:100%;display:flex;">
+  				<a href="/homepage" class="sq-text-white sq-secondary">DummyDomain</a>
+  				<div class="sq-flex-1"></div>
+  				<!-- Searchbar -->
+  				<div class="sq-flex-auto sq-form">
+  					<input type="text" placeholder="Search..." name="search" class="sq-nav-margin">
+  				</div>
+  				<!--ShoppingCart & SignIns -->
+  				<div class="sq-flex-1 sq-text-right">
+  					<div class="sq-air-x-05 sq-nav-btn-group2 sq-flex-1">
+        			<!-- UserButton -->
+					<button class="sq-nav-btn2" onclick="toggleModal('register')">Register</button>
+					<button onclick="toggleModal('myModal')">
+						<svg id="i-user" viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+							<path d="M22 11 C22 16 19 20 16 20 13 20 10 16 10 11 10 6 12 3 16 3 20 3 22 6 22 11 Z M4 30 L28 30 C28 21 22 20 16 20 10 20 4 21 4 30 Z" />
+						</svg>
+					</button>
+					<!-- ShoppingCartButton -->
+					<button class="sq-dropdown">
+						<svg id="i-cart" viewBox="0 0 32 32" width="20" height="20" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+							<path d="M6 6 L30 6 27 19 9 19 M27 23 L10 23 5 2 2 2" />
+							<circle cx="25" cy="27" r="2" />
+							<circle cx="12" cy="27" r="2" />
+						</svg>
+						<div class="sq-flex-wrap sq-secondary sq-t-border-3 sq-dropdown-content-right">
+							<div class="sq-shoppingcart-card sq-secondary">
+								<div class="sq-shoppingcart-pic">
+									<div class="sq-item-card sq-secondary">Picture here</div>
+								</div>
+								<div class="sq-shoppingcart-pic">
+									<ul class="sq-list">
+										<li>Product Name</li>
+										<li class="sq-mt-3 sq-text-left">Price</li>
+									</ul>
+								</div>
+							</div>
+							<div class="sq-text-right">Sum</div>
+							<p><a class="sq-nounderline sq-secondary" href="http://localhost:4000/shopping">Go To Cart</a></p>
+						</button>
+					</div>
+				</div>
+			</div>
+  			<!--NAVBAR Part 3/3 -->
+  			<div class="sq-navbar-links sq-secondary-highlight sq-text-center">
+				<div class="sq-nav-btn-group">
+					<button class="sq-dropdown">
+						Categories
+						<div class="sq-dropdown-content sq-secondary">
+							<p><a class="sq-nounderline sq-secondary" href="http://localhost:4000/products">Category 1</a></p>
+							<p><a class="sq-nounderline sq-secondary" href="#">Category 2</a></p>
+							<p><a class="sq-nounderline sq-secondary" href="#">Category 3</a></p>
+							<p><a class="sq-nounderline sq-secondary" href="#">Category 4</a></p>
+						</div>
+					</button>
+            		<button onclick="location.href='http://localhost:4000/products'">Products</button>
+  					<button onclick="location.href='http://localhost:4000/products'">White Kopps</button>
+  					<button onclick="location.href='http://localhost:4000/products'">Big Black Kopps</button>
+  					<button onclick="location.href='http://localhost:4000/products'">Bestselgere</button>
+  					<button onclick="location.href='http://localhost:4000/products'">Kampanjer</button>
+  					<button onclick="location.href='http://localhost:4000/userpage'">User Page</button>
+				</div>
+  			</div>
+  		</div>
+    </nav>
+    <main role="" class="sq-main">
+    	<%= render @view_module, @view_template, assigns %>
+    </main>
+    <footer class="sq-secondary">
+      <p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
+      <p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
+      <div class="sq-secondary sq-flex sq-flex-row sq-justify-center sq-flex-center-space"><div>
+        <a href="#" class="sq-text-white sq-secondary">Social media</a>
+      </div>
+      <div>
+        Phone: <a href="tel:0000" class="sq-text-white sq-secondary">#########</a>
+      </div>
+      <div>
+        <a href="/about" class="sq-text-white sq-secondary">About</a>
+      </div>
+      <div>
+        <a href="/support" class="sq-text-white sq-secondary">Support</a>
+      </div>
+      <div>
+        <a href="/faq" class="sq-text-white sq-secondary">FAQ</a>
+      </div>
+      <div>
+        <a href="mailto:nobody@online.no" class="sq-text-white sq-secondary">Mail</a>
+      </div>
+    </div>
+  </footer>
+  <div>
+
+    <!-- /page -->
+	<!-- Register modal -->
+	<div class="sq-modal" id="register">
+	    <div class="sq-modal-body" style="width:40rem; height:45rem;">
+	        <header>
+	            <div class="sq-close-button" onclick="toggleModal('register')">&times;</div>
+	        </header>
+	        <div class="sq-modal-content">
+	            <form class="sq-form" action="index.html" method="post" type="text" style="height: 38rem;">
+	                <h1 class="sq-text-center">Tabs
+	                    <span class="sq-subtext">Maddafakka</span>
+	                </h1>
+	                <div class="sq-container sq-flex-row sq-justify-center">
+
+	                    <div class="sq-tabs" style="height:3rem;">
+	                        <input type="radio" id="tab-1" name="tab-group-1" checked>
+	                        <label for="tab-1">Personalia</label>
+	                        <div class="sq-tab sq-justify-left">
+	                            <fieldset>
+	                                <legend>Personalia</legend>
+	                                <label>First Name</label>
+	                                <input type="text" name="" value="" placeholder="First name">
+	                                <label>Last name</label>
+	                                <input type="text" name="" value="" placeholder="Last name">
+	                                <label>Date of birth</label>
+	                                <input type="date" name="" value="">
+	                            </fieldset>
+	                        </div>
+	                    </div>
+	                    <div class="sq-tabs" style="height:3rem;">
+	                        <input type="radio" id="tab-2" name="tab-group-1">
+	                        <label for="tab-2">Adress</label>
+	                        <div class="sq-tab sq-justify-left" >
+	                            <fieldset>
+	                                <legend>Adress</legend>
+	                                <label>Adress</label>
+	                                <input type="text" name="" value="" placeholder="Adress">
+	                                <label>AreaCode</label>
+	                                <input type="text" name="" value="" placeholder="AreaCode">
+                                  <label>Country</label>
+                                  <input type="text" name="" value="" placeholder="Country">
+	                                <label>Phone</label>
+	                                <input type="text" name="" value="" placeholder="Phone">
+	                            </fieldset>
+	                        </div>
+	                    </div>
+	                    <div class="sq-tabs" style="height:3rem;">
+	                        <input type="radio" id="tab-3" name="tab-group-1">
+	                        <label for="tab-3">Account</label>
+	                        <div class="sq-tab sq-justify-left">
+	                            <fieldset>
+	                                <legend>Account</legend>
+	                                <label>E-mail</label>
+	                                <input type="text" name="" value="" placeholder="E-mail">
+	                                <label>Password</label>
+	                                <input type="text" name="" value="" placeholder="Password">
+	                                <label>Confirm Password</label>
+	                                <input type="text" name="" value="" placeholder="Confirm Password">
+	                            </fieldset>
+	                        </div>
+	                    </div>
+	                </div>
+	            </form>
+	            <div class="sq-text-center">
+	                <button class="sq-button-default" onclick="window.location.href='/homepage'" type="submit" class="sq-btn">Register</button>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	<!--login modal -->
+  <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
+  <div class="sq-modal" id="myModal" >
+    <div class="sq-modal-body" style="width:24rem;">
+		<header>
+      <div class="sq-close-button" onclick="toggleModal('myModal')">&times;</div>
+    </header>
+      <div class="sq-modal-content">
+        <section>
+					<form class="sq-form" action="index.html" method="post">
+        		<fieldset>
+    					<legend>Login</legend>
+    					<label>Email</label>
+    					<input type="email" name="" value="" placeholder="E-mail">
+    					<label>Password</label>
+    					<input type="password" name="" value="" placeholder="Password">
+    					<div class=" sq-container">
+                <div class="sq-justify-left">
+  								<button class="sq-button-main" type="submit" name="">Login</button>
+  							</div>
+  							<div class="sq-justify-right">
+  								<button class="sq-button-low" type="button" name="">New user</button>
+  							</div>
+          		</div>
+        		</fieldset>
+					</form>
+        </section>
+      </div>
+    </div>
+  </div>
+<!--Login modal end -->
+</body>
+</html>
+<script>
+
+window.toggleModal = (id)=> {
+var modal = document.getElementById(id);
+modal.classList.toggle('sq-modal-show');
+};
+var collaps = document.getElementsByClassName("sq-collapsible");
+var collapsContent = document.getElementsByClassName("sq-collapsible-content");
+
+var i;
+
+for (i = 0; i < collaps.length; i++){
+  collaps[i].addEventListener("click", function(){
+    this.classList.toggle("active");
+    var collapsContent = this.nextElementSibling;
+    if(collapsContent.style.display === "block"){
+      collapsContent.style.display ="none";
+    } else {
+        collapsContent.style.display="block";
+    }
+  });
+}
+</script>

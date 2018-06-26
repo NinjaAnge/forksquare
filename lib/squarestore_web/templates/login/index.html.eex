@@ -1,0 +1,35 @@
+<div class="sq-modal" id="myModal" >
+  <div class="sq-modal-body" style="width:24rem;">
+		<header>
+      <div class="sq-close-button" onclick="toggleModal('myModal')">&times;</div>
+    </header>
+    <div class="sq-modal-content">
+			<section>
+				<form class="sq-form" action="index.html" method="post">
+  				<fieldset>
+  					<legend>Login</legend>
+  					<label>Email</label>
+  					<input type="email" name="" value="" placeholder="E-mail">
+  					<label>Password</label>
+  					<input type="password" name="" value="" placeholder="Password">
+  					<div class=" sq-container">
+							<div class="sq-justify-left">
+								<button class="sq-button-main" type="submit" name="">Login</button>
+							</div>
+							<div class="sq-justify-right">
+								<button class="sq-button-low" type="button" name="">New user</button>
+							</div>
+        		</div>
+      		</fieldset>
+				</form>
+      </section>
+    </div>
+  </div>
+</div>
+  <script type="text/javascript">
+  window.toggleModal = (id)=> {
+  var modal = document.getElementById(id);
+  modal.classList.toggle('sq-modal-show');
+};
+  </script>
+<!-- </div> -->

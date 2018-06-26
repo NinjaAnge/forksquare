@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+
+    .sq-button-1st {
+      background-color: #1399dd; /* fargeklasse primary */
+      border: none;
+      color: #333; /* fargeklasse text-base */
+      padding: 0.4rem 1.5rem;
+      cursor: pointer;
+      font-weight: 550;
+    }
+    .sq-button-2nd {
+      background-color: #73a8eb; /* Custom fargeklasse */
+      border: none;
+      color: #333; /* fargeklasse text-base */
+      padding: 0.4rem 1.5rem;
+      cursor: pointer;
+      font-weight: 550;
+    }
+    .sq-button-3rd {
+        background-color: #b9cce6; /* Custom fargeklasse */
+        border: none;
+        color: #333; /* fargeklasse text-base */
+        padding: 0.4rem 1.5rem;
+        cursor: pointer;
+        font-weight: 550;
+      }
+      .sq-button-muted {
+        background-color: #b7b7b7; /* fargeklasse muted */
+        border: none;
+        color: #666; /* fargeklasse muted-highlight */
+        padding: 0.4rem 1.5rem;
+        cursor: pointer;
+        font-weight: 550;
+      }
+      .sq-button-1st:hover, .sq-button-2nd:hover, .sq-button-3rd:hover {
+        background-color: #d6d6d6; /* fargeklasse muted */
+        color: #0c0c0c; /* fargeklasse black */
+      }
+    .container {
+      width:100%;
+      padding: 2em;
+    }
+      /*
+    .sq-btn-3 button {
+      background-color: #2a5c99;
+      border: none;
+      color: white;
+      padding: 4px 20px;
+      cursor: pointer;
+    }
+    .sq-btn-3 button:hover {
+      background-color: #1a447a;
+    }
+
+    .sq-close{
+        line-height: 1rem;
+        position: absolute;
+        right: 0px;
+        text-align: center;
+        top: 0px;
+        width:24px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: all 0.5s ease-out;
+        -transition-delay: 0.2s;
+      }
+      .sq-button{
+        margin: 1rem auto;
+        font-size: 3rem;
+        text-decoration: none;
+        text-shadow: 1px 1px 0px;
+        border: 1px solid #b7b7b7;
+        cursor: pointer;
+        padding: 20px 70px 30px;
+        position: relative;
+        top: 2.5rem;
+        background-color: #ededed;
+        width: 15rem;
+        display: block;
+        text-align: center;
+        transition: all 0.5s ease-out;
+      }
+      .sq-button:hover{
+        color: #333;
+        background-color: #fafafa;
+        transition: all 0.5s ease-out;
+      }
+
+      .sq-btn{
+          height:100%;
+          border: none;
+          cursor: pointer;
+          text-align: center;
+          background-color:#fafafa;
+          padding:0;
+          margin:0;
+      }
+      .sq-btn:active {
+          -webkit-box-shadow: inset 1px 1px 10px #333;
+          -moz-box-shadow:    inset 1px 1px 10px #333;
+          box-shadow:         inset 1px 1px 10px #333;
+      }
+      .sq-form input[type=button], input[type=submit], input[type=reset], button[type=button], button[type=submit], button[type=reset] {
+          background-color: #3f9c35;
+          border: none;
+          color: #fafafa;
+          padding: 0.5rem 2rem;
+          text-decoration: none;
+          margin: 0.2rem;
+          cursor: pointer;
+      }
+*/
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <button class="sq-button-1st" type="button" name="button">Button 1st</button>
+    </div>
+    <div class="container">
+      <button class="sq-button-2nd" type="button" name="button">Button 2nd</button>
+    </div>
+    <div class="container">
+      <button class="sq-button-3rd" type="button" name="button">Button 3rd</button>
+    </div>
+    <div class="container">
+      <button class="sq-button-muted" type="button" name="button">Button muted</button>
+    </div>
+    <div class="container">
+      <button class="sq-button" type="button" name="button">sq-button</button>
+    </div>
+    <div class="container">
+      <button class="sq-btn" type="button" name="button">sq-btn utenfor form</button>
+    </div>
+    <div class="container">
+      <button class="sq-form" type="button" name="button">sq-btn i form</button>
+    </div>
+    <div class="container">
+      <input type="submit" name="submit" value="input - submit"></input>
+    </div>
+    <div class="container">
+      <button type="submit" name="button">Button - Submit</button>
+    </div>
+    <div class="container">
+      <input type="button" name="button" value="input - button">
+    </div>
+    <div class="container">
+      <button type="button" name="button">Button - button</button>
+    </div>
+    <div class="container">
+      <div class="sq-card-footer sq-btn-3">
+        <button>i div med klasse sq-btn-3</button>
+      </div>
+    </div>
+  </body>
+</html>

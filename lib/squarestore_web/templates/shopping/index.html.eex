@@ -1,88 +1,91 @@
-<div class="sq-panel">
+<div class="sq-page">
+  <div class="sq-main">
+    <div class="">
 
-
-  <table>
-    <thead>
-      <tr>
-        <th>Product</th>
-        <th>Amount</th>
-        <th>Price</th>
-        <th>Total price</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>
-          <a href="/product">
-    				<div class="sq-item-card sq-air-x-1"></div>
-    	  	</a>
-        </td>
-        <td>
-          Description of the product
-        </td>
-        <td>
-          <button class="sq-button-low" onclick="addItem()">
-            <svg id="i-minus" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-              <path d="M2 16 L30 16"/>
-            </svg>
-          </button>
-          <input class="sq-border-1" type="number" id="count">
-          <button class="sq-button-low" onclick="substractItem()">
-            <svg id="i-plus" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-              <path d= "M16 2 L16 30 M2 16 L30 16"/>
-            </svg>
-          </button>
-        </td>
-        <td>123,-</td>
-        <td>123,-</td>
-        <td>
-          <button class="sq-button-low">Remove</button>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <a href="/product">
-            <div class="sq-item-card sq-air-x-1"></div>
-          </a>
-        </td>
-        <td>
-          Description of the product
-        </td>
-        <td>
-          <button class="sq-button-low" onclick="addItem()">
-            <svg id="i-minus" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-              <path d="M2 16 L30 16"/>
-            </svg>
-          </button>
-          <input class="sq-border-1" type="number" id="count">
-          <button class="sq-button-low" onclick="substractItem()">
-            <svg id="i-plus" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
-              <path d= "M16 2 L16 30 M2 16 L30 16"/>
-            </svg>
-          </button>
-        </td>
-        <td>234,-</td>
-        <td>234,-</td>
-        <td>
-          <button class="sq-button-low">Remove</button>
-        </td>
-      </tr>
-      <tfoot>
+    </div>
+    <table>
+      <thead>
         <tr>
-          <td colspan="3"></td>
-          <td colspan="2"><strong>Total: 357,-</strong></td>
-          <td></td>
+          <th>Product</th>
+          <th>Amount</th>
+          <th>Price</th>
+          <th>Total price</th>
         </tr>
-      </tfoot>
-    </tbody>
-  </table>
-  	<div class="sq-flex sq-flex-center-space">
-      <div>
-        <button type="button" onclick="window.location.href='/products'" class="sq-button-default">Fortsett å handle</button>
-      </div>
-      <div>
-        <button type="button" onclick="window.location.href='/homepage'" class="sq-button-default">Til Kassen</button>
-      </div>
-  	</div>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <a href="/product">
+      				<div class="sq-item-card sq-air-x-1"></div>
+      	  	</a>
+          </td>
+          <td>
+            Description of the product
+          </td>
+          <td>
+            <button class="sq-button-low" onclick="addItem()">
+              <svg id="i-minus" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M2 16 L30 16"/>
+              </svg>
+            </button>
+            <input class="sq-border-1" type="number" id="count">
+            <button class="sq-button-low" onclick="substractItem()">
+              <svg id="i-plus" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d= "M16 2 L16 30 M2 16 L30 16"/>
+              </svg>
+            </button>
+          </td>
+          <td>123,-</td>
+          <td>123,-</td>
+          <td>
+            <button class="sq-button-low">Remove</button>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <a href="/product">
+              <div class="sq-item-card sq-air-x-1"></div>
+            </a>
+          </td>
+          <td>
+            Description of the product
+          </td>
+          <td>
+            <button class="sq-button-low" onclick="addItem()">
+              <svg id="i-minus" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d="M2 16 L30 16"/>
+              </svg>
+            </button>
+            <input class="sq-border-1" type="number" id="count">
+            <button class="sq-button-low" onclick="substractItem()">
+              <svg id="i-plus" viewBox="0 0 32 32" width="14" height="14" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                <path d= "M16 2 L16 30 M2 16 L30 16"/>
+              </svg>
+            </button>
+          </td>
+          <td>234,-</td>
+          <td>234,-</td>
+          <td>
+            <button class="sq-button-low">Remove</button>
+          </td>
+        </tr>
+        <tfoot>
+          <tr>
+            <td colspan="3"></td>
+            <td colspan="2"><strong>Total: 357,-</strong></td>
+            <td></td>
+          </tr>
+        </tfoot>
+      </tbody>
+    </table>
+    	<div class="sq-flex sq-flex-center-space">
+        <div>
+          <button type="button" onclick="window.location.href='/products'" class="sq-button-default">Fortsett å handle</button>
+        </div>
+        <div>
+          <button type="button" onclick="window.location.href='/homepage'" class="sq-button-default">Til Kassen</button>
+        </div>
+    	</div>
+    </div>
   </div>
 </div>
